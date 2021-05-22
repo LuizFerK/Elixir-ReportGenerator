@@ -72,7 +72,7 @@ In case you don't have an SSH key on your GitHub account, you can clone the proj
 1. Run ```mix deps.get``` to install the dependencies
 2. This project does not have a server, in this case, the mode of use is through IEx (Elixir's interactive shell), which can be accessed using the command ```iex -S mix``` in the project folder
 3. Within IEx, you have two usage options: standard execution (which will run 300 thousand lines in just one process) and parallel execution (which will run 3 files of 100.000 lines simultaneously). To use the standard mode, run the following command:
-> ```ReportsGenerator.build("gen_report.csv")```
+> ```ReportsGenerator.build("report_complete.csv")```
 4. If you want to use the parallel mode, run the following command:
 > ```ReportsGenerator.build_from_many(["report_1.csv", "report_2.csv", "report_3.csv"])```
 5. In both modes, you will have the same result, however, parallel execution will be faster
