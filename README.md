@@ -76,7 +76,7 @@ In case you don't have an SSH key on your GitHub account, you can clone the proj
 4. If you want to use the parallel mode, run the following command:
 > ```ReportsGenerator.build_from_many(["report_1.csv", "report_2.csv", "report_3.csv"])```
 5. In both modes, you will have the same result, however, parallel execution will be faster
-6. The result structure will be a **map** with the following information: ```all_hours``` (representing the total hours of all developers in the project),```hours_per_month``` (representing the total hours of each developer in all months of the year) and ```hours_per_year``` (representing the total hours of all developers between the years 2016 and 2020), as you can see below:
+6. The result will be a **map** with the following information: ```foods``` (representing the total times that every food appears in the files) and ```users``` (representing the total times that every user appears in the files), as you can see below:
 ```elixir
 {:ok,
  %{
